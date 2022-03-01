@@ -1,0 +1,27 @@
+1- win by show customer
+auction > person > 
+1) buying date 
+2) currency 
+3) price 
+4) tax
+
+auction house 
+1) auction house fiorm add 
+	i) bid type (live,online,test)
+trade->austion 
+auction house > bid type > fee win price 	
+
+reservation dates readonly 
+
+Export Certificate  > sending , receving 
+
+owner certificate > receving > sending
+
+comsingee or notify 
+countery select showing 
+countery code  1) telephone mboile  mobile 2
+
+
+show all ports in destination port, final destinations manul..
+
+Airmail Request by fecth user / staff

@@ -1,0 +1,2 @@
+[06-Sep-2021 11:18:15 Asia/Karachi] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/samziymw/public_html/thewebconcept/technolangs/pollybad/includes/functions.php on line 287
+[06-Sep-2021 11:18:20 Asia/Karachi] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/samziymw/public_html/thewebconcept/technolangs/pollybad/includes/functions.php on line 287

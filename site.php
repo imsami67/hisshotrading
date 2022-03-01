@@ -1,0 +1,70 @@
+<form action="#" method="post" id="demoForm" class="demoForm">
+
+    <fieldset>
+        <legend>Demo: Get Value or Text of Selected Option</legend>
+        
+        <p>
+            <select id="scripts" name="scripts">
+                <option value="scroll">Scrolling Divs JavaScript</option>
+                <option value="tooltip">JavaScript Tooltips</option>
+                <option value="con_scroll">Continuous Scroller</option>
+                <option value="banner">Rotating Banner JavaScript</option>
+                <option value="random_img">Random Image PHP</option>
+                <option value="form_builder">PHP Form Generator</option>
+                <option value="table_class">PHP Table Class</option>
+                <option value="order_forms">PHP Order Forms</option>
+            </select>
+            
+            <input type="text" size="30" name="display" id="display" />
+        </p>
+
+        <p>
+            <input type="button" id="showVal" value="Value Property" />
+            <input type="button" id="showTxt" value="selectedIndex/Text" />
+            <input type="button" id="doLoop" value="Value from Loop" />
+        </p>
+
+    </fieldset>
+</form>
+
+<script type="text/javascript">
+	
+
+(function() {
+    
+    // get references to select list and display text box
+    var sel = document.getElementById('scripts');
+    var el = document.getElementById('display');
+
+
+    function getSelectedOption(sel) {
+        var opt;
+        for ( var i = 0, len = sel.options.length; i < len; i++ ) {
+            opt = sel.options[i];
+            if ( opt.selected === true ) {
+                break;
+            }
+        }
+        return opt;
+    }
+
+    // assign onclick handlers to the buttons
+    document.getElementById('showVal').onclick = function () {
+        el.value = sel.value;    
+    }
+    
+    document.getElementById('showTxt').onclick = function () {
+        // access text property of selected option
+        el.value = sel.options[sel.selectedIndex].text;
+    }
+
+    document.getElementById('doLoop').onclick = function () {
+        var opt = getSelectedOption(sel);
+        el.value = opt.value;
+    }
+    
+}());
+// immediate function to preserve global namespace
+
+
+</script>
